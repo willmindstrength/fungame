@@ -16,18 +16,7 @@ export default function Home() {
           <div id="wheel"></div>
           <button id="spin-button">Spin</button>
         </div>
-    
-        <script>
-          const wheel = document.getElementById("wheel");
-          const spinButton = document.getElementById("spin-button");
-          const sectors = [ "Prize 1", "Prize 2", "Prize 3", "Prize 4", "Prize 5", "Lose" ];
-
-          spinButton.addEventListener("click", function() {
-            let sectorNumber = Math.floor(Math.random() * sectors.length);
-            wheel.innerHTML = sectors[sectorNumber];
-          });
-
-        </script>
+   
 
     
         <hr>
