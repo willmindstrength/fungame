@@ -5,8 +5,10 @@ import Footer from '@components/Footer'
 import React, { useState } from 'react';
 
 const sectors = [ "Prize 1", "Prize 2", "Prize 3", "Prize 4", "Prize 5", "Lose" ];
+  
 
-
+export default function Home() {
+  
   const [rotation, setRotation] = useState(0);
   const [prize, setPrize] = useState('');
   const [isSpinning, setIsSpinning] = useState(false);
@@ -21,8 +23,6 @@ const sectors = [ "Prize 1", "Prize 2", "Prize 3", "Prize 4", "Prize 5", "Lose" 
     }, 1000);
   };
   
-
-export default function Home() {
   return (
     <div className="container">
       <Head>
